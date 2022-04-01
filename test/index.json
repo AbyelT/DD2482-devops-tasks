@@ -17,7 +17,7 @@
       "text": "finish.md"
     }
   },
-  "environment": {},
+  "environment": {"Ubuntu"},
   "backend": {
     "imageid": "minikube-running"
   }
