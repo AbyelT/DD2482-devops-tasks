@@ -19,10 +19,23 @@ Install arkade:
 arkade --help
 
 Install openfaas:
-
+`arkade install openfaas`{{execute}}
+Show on the screen after installation:
 `curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}
-
-
 `kubectl rollout status -n openfaas deploy/gateway`{{execute}}
 
-`kubectl port-forward -n openfaas svc/gateway 8080:8080 --wait=false`{{execute}}
+`kubectl port-forward -n openfaas svc/gateway 8080:8080 &`{{execute}}
+
+kubectl get deploy --namespace openfaas
+
+OpenFass UI (Optional):
+
+
+`PASSWORD=$(kubectl get secret -n openfaas basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode; echo)`{{execute}}
+`echo $PASSWORD`{{execute}}
+
+Go to:
+[here](https://2886795291-31112-simba11.environments.katacoda.com/)s
+(port:31112,This is the Kubernetes NodePort of the external-gateway OpenFaaS service)
+name: admin
+passowrd: copy and paste it
