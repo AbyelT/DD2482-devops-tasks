@@ -1,1 +1,7 @@
-Clone the example repository with the command `git clone https://github.com/katacoda/scenario-examples.git katacoda-scenario-examples`{{execute}}
+Clone the example repository with the command 
+
+`kubectl version`{{execute}}
+
+blah blah
+
+`minikube version`{{execute}}
