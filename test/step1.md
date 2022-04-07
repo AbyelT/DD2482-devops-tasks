@@ -12,8 +12,6 @@ blah blah
 
 `kubectl get nodes`{{execute}}
 
-`kubectl get nodes`{{execute}}
-
 
 Install arkade:
 `curl -sLS https://get.arkade.dev | sudo sh`{{execute}}
@@ -23,3 +21,8 @@ arkade --help
 Install openfaas:
 
 `curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}
+
+
+`kubectl rollout status -n openfaas deploy/gateway`{{execute}}
+
+`kubectl port-forward -n openfaas svc/gateway 8080:8080 --wait=false`{{execute}}
