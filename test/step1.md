@@ -54,6 +54,16 @@ TODO: create a local registry
 
 ## Auto-scaling
 
+Prometheus:
+
 `kubectl patch service prometheus --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/type","value":"NodePort"}]'`{{execute}} 
 
 `kubectl patch service prometheus --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/ports/0/nodePort", "value":31120}]'`{{execute}}   
+
+Grafana:
+
+`kubectl -n openfaas run --image=stefanprodan/faas-grafana:4.6.3 --port=3000 --generator=run-pod/v1 grafana`{{execute}} 
+
+`kubectl -n openfaas expose pod grafana --type=NodePort --name=grafana`{{execute}} 
+
+`kubectl patch service grafana --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/ports/0/nodePort", "value":31122}]'`{{execute}} 
