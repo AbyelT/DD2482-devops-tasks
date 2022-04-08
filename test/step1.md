@@ -39,6 +39,8 @@ OpenFass UI (Optional):
 name: admin
 passowrd: copy and paste it
 
+CLI:
+`faas-cli login --password $PASSWORD"`{{execute}}  
 
 # TODO: find a serverless function at the Function Store and deploy and invoke it
 
@@ -48,3 +50,10 @@ Commands after:
 `faas-cli invoke cows`{{execute}}   
 
 ## Create our own function
+TODO: create a local registry
+
+## Auto-scaling
+
+`kubectl patch service prometheus --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/type","value":"NodePort"}]'`{{execute}} 
+
+`kubectl patch service prometheus --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/ports/0/nodePort", "value":31120}]'`{{execute}}   
