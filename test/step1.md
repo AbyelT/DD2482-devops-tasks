@@ -35,12 +35,16 @@ OpenFass UI (Optional):
 `PASSWORD=$(kubectl get secret -n openfaas basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode; echo)`{{execute}}
 `echo $PASSWORD`{{execute}}
 
-Go to:
-[here](https://2886795291-31112-simba11.environments.katacoda.com/)s
 (port:31112,This is the Kubernetes NodePort of the external-gateway OpenFaaS service)
 name: admin
 passowrd: copy and paste it
 
 
+# TODO: find a serverless function at the Function Store and deploy and invoke it
+
 Commands after:
-faas-cli store deploy "Face Detection with Pigo"  
+`faas-cli store deploy "ASCII Cows"`{{execute}}   
+
+`faas-cli invoke cows`{{execute}}   
+
+## Create our own function
