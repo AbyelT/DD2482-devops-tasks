@@ -4,10 +4,6 @@ Clone the example repository with the command
 
 blah blah
 
-`minikube version`{{execute}}
-
-`minikube start --wait=false`{{execute}}
-
 `kubectl cluster-info`{{execute}}
 
 `kubectl get nodes`{{execute}}
