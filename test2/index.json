@@ -6,16 +6,20 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "The kubernetes cluster",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
-        "text": "step1.md"
+        "title": "Install Arkade and OpenFaas",
+        "text": "step2.md"
       }, 
       {
-        "title": "Step 3",
-        "text": "step1.md"
+        "title": "OpenFaas setup",
+        "text": "step3.md"
+      }, 
+      {
+        "title": "OpenFaas setup",
+        "text": "step3.md"
       }
     ],
     "intro": {
