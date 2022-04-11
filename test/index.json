@@ -1,6 +1,6 @@
 {
-  "title": "OpenFaas",
-  "description": "Deploying serverless functions on OpenFaas framework",
+  "title": "OpenFaas tutorial",
+  "description": "OpenFaas: Deploying serverless functions",
   "difficulty": "Beginner",
   "time": "10 minutes",
   "details": {
