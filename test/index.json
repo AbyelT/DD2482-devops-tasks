@@ -1,8 +1,8 @@
 {
-  "title": "test",
-  "description": "test",
+  "title": "OpenFaas",
+  "description": "Deploying serverless functions on OpenFaas framework",
   "difficulty": "Beginner",
-  "time": "5 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {
