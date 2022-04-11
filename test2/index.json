@@ -10,20 +10,16 @@
         "text": "step1.md"
       },
       {
-        "title": "Install Arkade and OpenFaas",
+        "title": "OpenFaas setup",
         "text": "step2.md"
       }, 
       {
-        "title": "OpenFaas setup",
+        "title": "OpenFaas UI",
         "text": "step3.md"
       }, 
       {
-        "title": "OpenFaas UI",
-        "text": "step4.md"
-      }, 
-      {
         "title": "Serverless functions",
-        "text": "step5.md"
+        "text": "step4.md"
       }, 
       {
         "title": "Push to docker registry",

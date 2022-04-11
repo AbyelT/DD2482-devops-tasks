@@ -1,30 +1,37 @@
-## OpenFaas CLI
+## Docker hub
 
-While it is possible to create and deploy functions through the UI, we will do it throuhg the OpenFaas CLI (faas-cli)
+In order to create functions, you need to know where it wil be stored as a container image. This could either be a local container registry or a remote registry like Docker Hub. For the sake of simplicity we will use Docker hub.
 
-Install the Faas-cli: `curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}
+You will need to create an account at Docker hub, this is free and is mostly used for pulling and pushing images to the registry. Sign up here: [Docker hub](https://hub.docker.com/)
 
-The commands we will use in the CLI are new, build, push and deploy. You can see more commands through the following command: `faas-cli --help.`{{execute}}, for more details add the command between faas-cli and --help.
+# Building and pushing your function
 
-## Build and deploy the function
-You start by creating a function using node: `faas-cli new hello --lang node`. This will create a new function from a OpenFaas template that are stored in git repositories. The following files will be created:
-- hello.yml
-- hello/handler.js
-- hello/requirement.txt
+The hello.yml file contains the following: 
+```
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080 
+functions:
+  helloworld:
+    lang: node
+    handler: ./hello
+    image: helloworld:latest
+```
 
-hello.yml contains informaion on how openFaas should build and deploy your function(s), handler.py contains your function and requirements.txt can be used to add additional dependencies to be used by the functions. 
+Change the image tag by adding your Docker Hub username like this: ```image: <Username>/helloworld:latest```
 
+Before pushing any images to the registry, you have to authenticate yourself through the Docker CLI. This is done through the following: `Docker login`{{executable}}. Enter your Docker username and password when the prompt ask you for it.
 
-## todo
-add steps about pushing to docker hub, deploying and inoking, and auto-scaling
+Now, you can use the three functions (build, push and deploy) to get your functions up to OpenFaas. There is a shorter command which combines all these three: `faas-cli up -f helloworld.yml`{{executable}}
 
-Commands after:
-`faas-cli store deploy "ASCII Cows"`{{execute}}   
+After a moment, you should see the following URL in the terminal:
 
-`echo "hey" | faas-cli invoke cows`{{execute}}   
+*put output here*
 
-## TODO: Create our own function
-TODO: create a local registry
+now you can invoke your functions using either the UI, faas-cli or curl. The faas-cli command is: `faas-cli invoke -f helloworld.yml`
+
+Congratulations! You have successfully deployed a serverless function to OpenFaas
 
 ## Auto-scaling
 
