@@ -1,12 +1,20 @@
 {
-  "title": "test 2",
-  "description": "test 2",
+  "title": "OpenFaas tutorial",
+  "description": "OpenFaas: Deploying serverless functions",
   "difficulty": "Beginner",
-  "time": "5 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {
         "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step1.md"
+      }, 
+      {
+        "title": "Step 3",
         "text": "step1.md"
       }
     ],

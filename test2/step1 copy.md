@@ -1,12 +1,8 @@
-
+Clone the example repository with the command 
 
 `kubectl version`{{execute}}
 
 blah blah
-
-`minikube version`{{execute}}
-
-`minikube start --wait=false`{{execute}}
 
 `kubectl cluster-info`{{execute}}
 
@@ -45,14 +41,14 @@ CLI:
 Commands after:
 `faas-cli store deploy "ASCII Cows"`{{execute}}   
 
-`echo "hey" | faas-cli invoke cows`{{execute}}   
+`faas-cli invoke cows`{{execute}}   
 
 ## TODO: Create our own function
 TODO: create a local registry
 
 ## Auto-scaling
 
-<!-- Prometheus:
+Prometheus:
 
 `kubectl patch service prometheus --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/type","value":"NodePort"}]'`{{execute}} 
 
@@ -62,15 +58,15 @@ Alert Manager:
 
 `kubectl patch service alertmanager --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/type","value":"NodePort"}]'`{{execute}}
 
-`kubectl patch service alertmanager --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/ports/0/nodePort", "value":31121}]'`{{execute}} -->
+`kubectl patch service alertmanager --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/ports/0/nodePort", "value":31121}]'`{{execute}}
 
 Grafana:
 
-`kubectl -n openfaas run --image=stefanprodan/faas-grafana:4.6.3 --port=3000 grafana`{{execute}} 
+`kubectl -n openfaas run --image=stefanprodan/faas-grafana:4.6.3 --port=3000 --generator=run-pod/v1 grafana`{{execute}} 
 
 `kubectl -n openfaas expose pod grafana --type=NodePort --name=grafana`{{execute}} 
 
-`kubectl port-forward pod/grafana 3000:3000 -n openfaas`{{execute}} 
+`kubectl patch service grafana --namespace=openfaas --type='json' --patch='[{"op": "replace", "path": "/spec/ports/0/nodePort", "value":31122}]'`{{execute}} 
 
 
 The default credentials are admin/admin.
