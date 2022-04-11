@@ -18,8 +18,23 @@
         "text": "step3.md"
       }, 
       {
-        "title": "OpenFaas setup",
-        "text": "step3.md"
+        "title": "OpenFaas UI",
+        "text": "step4.md"
+      }, 
+      {
+        "title": "Serverless functions",
+        "text": "step5.md"
+      }, 
+      {
+        "title": "Push to docker registry",
+        "text": ""
+      }, 
+      {
+        "title": "Deploy and invoke functions",
+        "text": ""
+      }, {
+        "title": "Auto-Scaling",
+        "text": ""
       }
     ],
     "intro": {

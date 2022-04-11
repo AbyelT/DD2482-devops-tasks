@@ -1,46 +1,22 @@
+## OpenFaas CLI
+
+While it is possible to create and deploy functions through the UI, we will do it throuhg the OpenFaas CLI (faas-cli)
+
+Install the Faas-cli: `curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}
+
+The commands we will use in the CLI are new, build, push and deploy. You can see more commands through the following command: `faas-cli --help.`{{execute}}, for more details add the command between faas-cli and --help.
+
+## Build and deploy the function
+You start by creating a function using node: `faas-cli new hello --lang node`. This will create a new function from a OpenFaas template that are stored in git repositories. The following files will be created:
+- hello.yml
+- hello/handler.js
+- hello/requirement.txt
+
+hello.yml contains informaion on how openFaas should build and deploy your function(s), handler.py contains your function and requirements.txt can be used to add additional dependencies to be used by the functions. 
 
 
-`kubectl version`{{execute}}
-
-blah blah
-
-`minikube version`{{execute}}
-
-`minikube start --wait=false`{{execute}}
-
-`kubectl cluster-info`{{execute}}
-
-`kubectl get nodes`{{execute}}
-
-
-Install arkade:
-`curl -sLS https://get.arkade.dev | sudo sh`{{execute}}
-
-arkade --help
-
-Install openfaas:
-`arkade install openfaas`{{execute}}
-Show on the screen after installation:
-`curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}
-`kubectl rollout status -n openfaas deploy/gateway`{{execute}}
-
-`kubectl port-forward -n openfaas svc/gateway 8080:8080 &`{{execute}}
-
-`kubectl get deploy --namespace openfaas`{{execute}}
-
-OpenFass UI (Optional):
-
-`arkade info openfaas`{{execute}}
-
-`PASSWORD=$(kubectl get secret -n openfaas basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode; echo)`{{execute}}
-`echo $PASSWORD`{{execute}}
-
-(port:31112,This is the Kubernetes NodePort of the external-gateway OpenFaaS service)
-name: admin
-passowrd: copy and paste it
-
-CLI:
-`faas-cli login --password $PASSWORD`{{execute}}  
+## todo
+add steps about pushing to docker hub, deploying and inoking, and auto-scaling
 
 Commands after:
 `faas-cli store deploy "ASCII Cows"`{{execute}}   

@@ -4,7 +4,7 @@ Install arkade: `curl -sLS https://get.arkade.dev | sudo sh`{{execute}}
 
 For more details about arkade: `arkade --help`{{execute}}
 
-With arkade, we can install openfaas with: `arkade install openfaas`{{execute}}
+With arkade, we can install openfaas: `arkade install openfaas`{{execute}}. 
 
-Show on the screen after installation:
-`curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}
+Installing OpenFaas gives a set of commands valuable to us
+
