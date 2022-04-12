@@ -31,10 +31,11 @@ After a moment, you should see the following output:
 Deployed. 202 Accepted.
 URL: http://127.0.0.1:8080/function/hello
 ```
+## Invoke your function
 
 Now you can invoke your functions using either the UI, faas-cli or curl. The faas-cli command is: `faas-cli invoke hello`{{executable}}. Try giving a random input and then press ctrl + D. The result should look like this:
 ```
 {"status":"done"}
 ```
-Congratulations! You have successfully deployed a serverless function to OpenFaas, in the next step you will learn how OpenFaas automatically scales the amount replias in kubernetes with your function(s)
+Congratulations! You have successfully deployed a serverless function to OpenFaas, in the next step you will learn how OpenFaas handles auto-scaling of your functions. 
 

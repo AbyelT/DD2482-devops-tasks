@@ -71,7 +71,10 @@ Grafana:
 
 The default credentials are admin/admin.
 
+## leftover
 
+use in cli
+`kubectl port-forward pod/grafana 3000:3000 -n openfaas`{{execute}} 
 
 ## Command and texts
 

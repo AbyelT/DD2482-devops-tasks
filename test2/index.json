@@ -18,15 +18,15 @@
         "text": "step3.md"
       }, 
       {
-        "title": "Serverless functions",
+        "title": "Create functions",
         "text": "step4.md"
       }, 
       {
-        "title": "Push to docker registry",
+        "title": "Deploy and invoke functions",
         "text": "step5.md"
       }, 
       {
-        "title": "Deploy and invoke functions",
+        "title": "Auto-scaling",
         "text": "step6.md"
       }
     ],
