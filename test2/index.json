@@ -23,14 +23,11 @@
       }, 
       {
         "title": "Push to docker registry",
-        "text": ""
+        "text": "step5.md"
       }, 
       {
         "title": "Deploy and invoke functions",
-        "text": ""
-      }, {
-        "title": "Auto-Scaling",
-        "text": ""
+        "text": "step6.md"
       }
     ],
     "intro": {
