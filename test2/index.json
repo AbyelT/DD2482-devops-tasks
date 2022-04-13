@@ -38,8 +38,8 @@
     }
   },
   "environment": { 
-    "uilayout": "terminal-iframe",
-    "dashboards": [{"name": "Display 80", "port": 80}, {"name": "Display 8080", "port": 8080}],
+    "uilayout": "terminal",
+    "dashboards": [{"name": "OpenFass UI", "port": 31112}, {"name": "Grafana", "port": 8080}],
     "showide": true
 
   },

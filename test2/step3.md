@@ -6,11 +6,14 @@ This is done with the cli:
 Display it in the terminal to see the password: `echo $PASSWORD`{{execute}}. 
 Copy the password before moving on.
 
-To access the UI, open a new tab in the terminal (the + sign beside the terminal) and select **View HTTP port 80 on Host 1**. This leads to a new page for connecting to ports. The default port for OpenFaas UI is **31112**, this is the Kubernetes NodePort of the external-gateway OpenFaaS service. Input the port number at the textbox and click *display port*.
-
-A pop-up will then appear which requires your credentials. Authorize using the username *admin* and the password as the copied value from the echo. 
+To access the UI, open the OpenFaas tab. A pop-up will then appear which requires your credentials. Authorize using the username *admin* and the password as the copied value from the echo. 
 
 If correct, The OpenFaas UI should appear similar like this:
 ![openFassUI](../openfaasUI.png)
 
-With OpenFaas installed and setup, you are now ready to write your first serverless functions and deploy them to kubernetes!
+## OpenFaas CLI
+While it is possible to create and deploy functions through the UI, we will do it through the OpenFaas CLI (faas-cli). 
+Install the Faas-cli: `curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}
+
+The commands we will use at this tutorial are *new*, *build*, *push* and *deploy*. 
+You can see more commands through `faas-cli --help`{{execute}}, for more details about each command add the desired command between `faas-cli` and `--help`.
