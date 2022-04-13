@@ -66,11 +66,11 @@ Alert Manager:
 
 Grafana:
 
-`kubectl -n openfaas run --image=stefanprodan/faas-grafana:4.6.3 --port=3000 grafana`{{execute}} 
+`kubectl -n openfaas run --image=stefanprodan/faas-grafana:4.6.3 --port=3000 --generator=run-pod/v1 grafana`{{execute}} 
 
 `kubectl -n openfaas expose pod grafana --type=NodePort --name=grafana`{{execute}} 
 
-`kubectl port-forward pod/grafana 3000:3000 -n openfaas`{{execute}} 
+`kubectl port-forward pod/grafana 3000:3000 -n openfaas &&`{{execute}} 
 
 
 The default credentials are admin/admin.

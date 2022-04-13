@@ -14,11 +14,11 @@
         "text": "step2.md"
       }, 
       {
-        "title": "OpenFaas UI",
+        "title": "OpenFaas UI and CLI",
         "text": "step3.md"
       }, 
       {
-        "title": "Create functions",
+        "title": "Create a Serverless function",
         "text": "step4.md"
       }, 
       {
@@ -38,7 +38,7 @@
     }
   },
   "environment": { 
-    "uilayout": "terminal",
+    "uilayout": "terminal-iframe",
     "showide": true
 
   },
