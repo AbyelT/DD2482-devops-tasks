@@ -21,5 +21,3 @@ You can check all deployments related to OpenFaas with the command: `kubectl get
 
 
 
-
-

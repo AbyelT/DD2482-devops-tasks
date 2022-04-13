@@ -9,7 +9,7 @@ Copy the password before moving on.
 To access the UI, open the OpenFaas tab. A pop-up will then appear which requires your credentials. Authorize using the username *admin* and the password as the copied value from the echo. 
 
 If correct, The OpenFaas UI should appear similar like this:
-![openFassUI](../openfaasUI.png)
+![openFaasUI](../openfaasUI.png)
 
 ## OpenFaas CLI
 While it is possible to create and deploy functions through the UI, we will do it through the OpenFaas CLI (faas-cli). 

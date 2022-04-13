@@ -12,7 +12,7 @@ Follow these steps to deploy and access Grafana:
 5. When the dashboard is visible, authenticate yourself with the credentials admin/admin. You should now see the Grafana dashboard.
 
 ## Grafana Dashboard
-The dashboard displays useful data such as the function rate, the total requests and the *replica scaling* (the amount of active replicas). To see the auto-scaling in action, we will use a script which invokes your function atleast 10000 times: `for i in {0..10000}; do echo -n "Post $i" | faas-cli invoke hello && echo; done;`{{execute}}
+The dashboard displays useful data such as the function rate, the total requests and the *replica scaling* (the amount of active replicas). To see the auto-scaling in action, we will use a script which invokes your function 10000 times: `for i in {0..10000}; do echo -n "Post $i" | faas-cli invoke hello && echo; done;`{{execute}}
 
 You should now see an increase in the function rate and eventually the amount replias increasing as a respone to the increased amount of invocations. 
 <!-- TODO: add image here -->

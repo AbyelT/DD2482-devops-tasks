@@ -8,3 +8,5 @@ This will create a new function from a OpenFaas template, that are stored in git
 - hello/requirement.txt: can be used to add additional dependencies to be used by the functions
 
 <!-- TODO: add screenshots from the VS code, open the handler.js and explain -->
+
+<!-- TODO: inspect the fuctnion from the UI and cli -->
