@@ -38,7 +38,7 @@
     }
   },
   "environment": { 
-    "uilayout": "terminal",
+    "uilayout": "terminal-iframe",
     "dashboards": [{"name": "OpenFass UI", "port": 31112}, {"name": "Grafana", "port": 8080}]
   },
   "backend": {
