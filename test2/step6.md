@@ -2,20 +2,17 @@ For tracking metrics on your deployed functions, OpenFaas uses [Prometheus](http
 
 Follow these steps to deploy and access Grafana:
 1. Make Grafana run in the kubernetes cluster: `kubectl -n openfaas run --image=stefanprodan/faas-grafana:4.6.3 --port=3000 grafana`{{execute}} 
-2. Then expose Grafana with a NodePort: `kubectl -n openfaas expose pod grafana --type=NodePort --name=grafana --port=8081`{{execute}}
- <!-- TODO: we should know the Grafana port  -->
+2. Then expose Grafana with a NodePort: `kubectl -n openfaas expose pod grafana --type=NodePort --name=grafana`{{execute}}
+3. Then get the port which Grafana was exposed to: `GRAFANA_PORT=$(kubectl -n openfaas get svc grafana -o jsonpath="{.spec.ports[0].nodePort}") && echo $GRAFANA_PORT`{{execute}}
+Copy the port.
+4. Open the Grafana tab and paste the port on the box.
+5. When the dashboard is visible, authenticate yourself with the credentials admin/admin. Then navigate to the OpenFaas dashboard.
 
-3. Then get the port which Grafana was exposed to: `GRAFANA_PORT=$(kubectl -n openfaas get svc grafana -o jsonpath="{.spec.ports[0].nodePort}") | echo $GRAFANA_PORT`{{execute}}
-4. Open the Grafana tab.
-5. When the dashboard is visible, authenticate yourself with the credentials admin/admin. You should now see the Grafana dashboard.
+You should be able to see the pre-made OpenFaaS dashboard which looks like this:
+<!-- TODO: add image grafana here -->
 
-## Grafana Dashboard
-The dashboard displays useful data such as the function rate, the total requests and the *replica scaling* (the amount of active replicas). To see the auto-scaling in action, we will use a script which invokes your function 10000 times: `for i in {0..10000}; do echo -n "Post $i" | faas-cli invoke hello && echo; done;`{{execute}}
+The dashboard displays useful information: the Function rate, the Replica scaling, the Total Requests - 200 and the Execution duration (s).
 
-You should now see an increase in the function rate and eventually the amount replias increasing as a respone to the increased amount of invocations. 
-<!-- TODO: add image here -->
-
-<!-- TODO: Also Scale to zero -->
 
 
 
