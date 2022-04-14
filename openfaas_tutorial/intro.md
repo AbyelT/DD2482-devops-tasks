@@ -1,6 +1,8 @@
 
 ![OpenFaasConceptual](https://camo.githubusercontent.com/5f22e9a781e50057d3f11ef64a2914b741d2419324d67f62f7a03e82789b004f/68747470733a2f2f626c6f672e616c6578656c6c69732e696f2f636f6e74656e742f696d616765732f323031372f30382f666161735f736964652e706e67)
 
+## OpenFaas: Serverless Functions Made Simple
+
 Welcome to this tutorial on how to *deploy serverless functions using OpenFaas*! In this tutorial you will learn how:
 - To install and setup OpenFaas
 - To interact with OpenFaas using the OpenFaas UI and CLI

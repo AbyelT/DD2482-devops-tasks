@@ -1,0 +1,53 @@
+{
+  "title": "OpenFaas tutorial",
+  "description": "Deploying serverless functions on kubernetes with OpenFaas",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "The Kubernetes cluster",
+        "text": "step1.md"
+      },
+      {
+        "title": "OpenFaas setup",
+        "text": "step2.md"
+      }, 
+      {
+        "title": "OpenFaas UI and CLI",
+        "text": "step3.md"
+      }, 
+      {
+        "title": "Create a Serverless function",
+        "text": "step4.md"
+      }, 
+      {
+        "title": "Deploy and invoke functions",
+        "text": "step5.md"
+      }, 
+      {
+        "title": "Grafana",
+        "text": "step6.md"
+      }, 
+      {
+        "title": "Auto-scaling",
+        "text": "step7.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": { 
+    "uilayout": "terminal-iframe",
+    "showide": true,
+    "dashboards": [{"name": "OpenFass UI", "port": 31112}, {"name": "Grafana", "port": 8080}]
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
+
+}
