@@ -21,6 +21,6 @@ With OpenFaas, developers can automate maintenance and scaling. The time saved f
 Serverless Functions are server-side functions that is hosted and run by a third-party vendor e.g. Google cloud, AWS. The vendors takes care of infrastructure configuration, maintenance and scaling of the functions. 
 
 ## What prior experience & tools is required?
-This tutorial is intended for beginners new to serverless functions. Experience with docker and kubernetes are not required but is a bonus. The steps used are based on the [OpenFaas documentation](https://docs.openfaas.com/).
+This tutorial is intended for beginners new to serverless functions. Experience with docker and Kubernetes are not required but is a bonus. The steps used are based on the [OpenFaas documentation](https://docs.openfaas.com/).
 
 By [Abyel Tesfay](https://github.com/AbyelT) & [Chrysa Dikonimaki](https://github.com/xrisaD)
