@@ -13,7 +13,7 @@ With Arkade, we can install openfaas:
 We did not have Helm3 installed so it has been installed automatically.
 
 
-Installing OpenFaas will print a set of valuable commands to us. We have to run these commands to log in and access the OpenFaaS Gateway service in Kubernetes. The first two commands will forward the Gateway of OpenFaaS service to your machine, in this case the katacoda environment: 
+Installing OpenFaas will print a set of valuable commands to us.  The first two commands will forward the Gateway of OpenFaaS service to your machine: 
 - `kubectl rollout status -n openfaas deploy/gateway`{{execute}}
 
 - `kubectl port-forward -n openfaas svc/gateway 8080:8080 &`{{execute}}
