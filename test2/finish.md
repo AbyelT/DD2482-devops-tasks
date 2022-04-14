@@ -1,1 +1,1 @@
-This is the finish
+Congratulations! Through this tutorial you have practically done and learned the following: 
