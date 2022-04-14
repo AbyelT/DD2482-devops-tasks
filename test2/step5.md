@@ -24,7 +24,6 @@ Switch to the code editor on the next tab and change the image tag by adding you
 Before pushing any images to the registry, you have to authenticate yourself through the Docker CLI. T
 his is done through the following: `Docker login`{{executable}}. 
 Enter your Docker username and password. 
-You also have to authenticate yourself in the openfaas CLI before deploying your functions: `faas-cli login --password $PASSWORD`{{executable}}
 
 Now, you can use the three functions (build, push and deploy) to get your functions up to OpenFaas. There is a shorter command which combines all those commands: `faas-cli up -f hello.yml`{{executable}}
 
