@@ -3,6 +3,7 @@
 Arkade is a portable marketplace for downloading CLIs and installing helm charts (a collection of files related to kubernetes), we will use it for downloading OpenFaas and other neccessary tools.
 
 Install Arkade: `curl -sLS https://get.arkade.dev | sudo sh`{{execute}}. 
+
 More details about Arkade: `arkade --help`{{execute}}.
 
 ## OpenFaas
