@@ -17,5 +17,4 @@ Install the Faas-cli: `curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}
 The commands we will use at this tutorial are *new*, *build*, *push* and *deploy*.
 To be able to deploy functions using the cli you have to authenticate yourself: `faas-cli login --password $PASSWORD`{{execute}}
 
-
 You can see more commands through `faas-cli --help`{{execute}}, for more details about each command add the desired command between `faas-cli` and `--help`.
