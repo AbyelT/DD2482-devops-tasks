@@ -1,5 +1,6 @@
-While it is possible to create and deploy functions through the UI, we will do it through the OpenFaas CLI (faas-cli). 
 With OpenFaas installed and setup, you are now ready to write your first serverless functions and deploy them to kubernetes!
+While it is possible to create and deploy functions through the UI, we will do it through the OpenFaas CLI (faas-cli).
+
 ## Generate function from template
 You start by creating a serverless function using node: `faas-cli new hello --lang node`{{execute}}. 
 
