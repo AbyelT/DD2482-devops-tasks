@@ -9,6 +9,23 @@ This will create a new function from a OpenFaas template, that are stored in git
 - hello/handler.js: contains your function
 - hello/requirement.txt: can be used to add additional dependencies to be used by the functions
 
-<!-- TODO: add screenshots from the VS code, open the handler.js and explain -->
 
-<!-- TODO: inspect the fuctnion from the UI and cli -->
+Open the IDE tab. You should be able to see the files mentioned above. The handler.js file will look like this:
+```
+"use strict"
+
+module.exports = async (context, callback) => {
+    return {status: "done"}
+}
+```
+It is a serverless function which returns a JSON object with the status set to done everytime it is called.
+Let's try to modify it to return a "Hello world" message.
+
+```
+"use strict"
+
+module.exports = async (context, callback) => {
+    return {message: "Hello world!"}
+}
+```
+You can modify it to do whatever you want. 😊

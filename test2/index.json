@@ -26,8 +26,13 @@
         "text": "step5.md"
       }, 
       {
-        "title": "Auto-scaling",
+        "title": "Grafana",
         "text": "step6.md"
+      }
+      , 
+      {
+        "title": "Scaling",
+        "text": "step7.md"
       }
     ],
     "intro": {
