@@ -39,6 +39,7 @@
   },
   "environment": { 
     "uilayout": "terminal-iframe",
+    "showide": true,
     "dashboards": [{"name": "OpenFass UI", "port": 31112}, {"name": "Grafana", "port": 8080}]
   },
   "backend": {
