@@ -6,7 +6,7 @@ Follow these steps to deploy and access Grafana:
 3. Then get the port which Grafana was exposed to: `GRAFANA_PORT=$(kubectl -n openfaas get svc grafana -o jsonpath="{.spec.ports[0].nodePort}") && echo $GRAFANA_PORT`{{execute}}
 Copy the port.
 4. Open the Grafana tab and paste the port on the box.
-5. When the dashboard is visible, authenticate yourself with the credentials admin/admin. Then navigate to the OpenFaas dashboard.
+5. When the dashboard is visible, authenticate yourself with the credentials admin/admin. Then navigate to the OpenFaas dashboard by pressing `home` and then selecting `openFaas`.
 
 You should be able to see the pre-made OpenFaaS dashboard which looks like this:
 ![grafana](../assets/grafana.PNG)

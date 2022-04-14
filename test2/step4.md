@@ -10,7 +10,7 @@ This will create a new function from a OpenFaas template, that are stored in git
 - hello/requirement.txt: can be used to add additional dependencies to be used by the functions
 
 
-Open the IDE tab. You should be able to see the files mentioned above. The handler.js file will look like this:
+Open the IDE tab. You should be able to see the files mentioned above. The handler.js in the directory ```/hello```  will look like this:
 ```
 "use strict"
 
@@ -19,13 +19,9 @@ module.exports = async (context, callback) => {
 }
 ```
 It is a serverless function which returns a JSON object with the status set to done everytime it is called.
-Let's try to modify it to return a "Hello world" message.
+Let's replace the returned object with the following:
 
 ```
-"use strict"
-
-module.exports = async (context, callback) => {
-    return {message: "Hello world!"}
-}
+return {message: "Hello world!"}
 ```
 You can modify it to do whatever you want. 😊
