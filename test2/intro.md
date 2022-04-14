@@ -11,6 +11,9 @@ Welcome to this tutorial on how to *deploy serverless functions using OpenFaas*!
 ## What is OpenFaas?
 OpenFaas is an open-source framework for deploying event-driven functions and microservices to Kubernetes. You can deploy Serverless functions (server-side functions that run on third-party vendors) on any cloud without being locked to a single cloud-service provider e.g. AWS, Google cloud, Azure.
 
+## What is a Serveless Function?
+<!-- TODO -->
+
 ## What prior experience & tools is required?
 This tutorial is intended for beginners new to serverless functions. Experience with docker and kubernetes are not required but is a bonus. The steps used are based on the [OpenFaas documentation](https://docs.openfaas.com/).
 

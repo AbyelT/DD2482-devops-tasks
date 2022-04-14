@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "The kubernetes cluster",
+        "title": "The Kubernetes cluster",
         "text": "step1.md"
       },
       {
@@ -44,6 +44,6 @@
 
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running:1.18"
+    "imageid": "kubernetes-cluster-running"
   }
 }
