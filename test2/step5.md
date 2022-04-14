@@ -6,7 +6,7 @@ You will need to create an account at Docker hub, this is free and is mostly use
 
 ## Building and pushing your function
 
-The hello.yml file contains the following: 
+Open the hello.yml file in the IDE tab. It should contain the following: 
 ```
 version: 1.0
 provider:
@@ -19,13 +19,12 @@ functions:
     image: hello:latest
 ```
 
-Switch to the code editor on the next tab and change the image tag by adding your Docker Hub username like this: ```image: <Username>/hello:latest```
+Change the image tag by adding your Docker Hub username like this: ```image: <Username>/hello:latest```
 
-Before pushing any images to the registry, you have to authenticate yourself through the Docker CLI. T
-his is done through the following: `Docker login`{{executable}}. 
+Before pushing any images to the registry, you have to authenticate yourself through the Docker CLI. This is done through the following: `docker login`{{execute}}. 
 Enter your Docker username and password. 
 
-Now, you can use the three functions (build, push and deploy) to get your functions up to OpenFaas. There is a shorter command which combines all those commands: `faas-cli up -f hello.yml`{{executable}}
+Now, you can use the three functions (build, push and deploy) to get your functions up to OpenFaas. There is a shorter command which combines all those commands: `faas-cli up -f hello.yml`{{execute}}
 
 After a moment, you should see the following output:
 
@@ -33,11 +32,18 @@ After a moment, you should see the following output:
 Deployed. 202 Accepted.
 URL: http://127.0.0.1:8080/function/hello
 ```
+
+You just deployed your first serverless function!
+You should be able to see it through the OpenFaas UI and faas-cli.
+Open the OpenFaas UI again and press the "hello" function on the sidebar, it should look like this:
+![openFaasUI](./images/hellofunction.png)
+Alternatively, you can run the following command:
+ `faas-cli list`{{execute}}.
+
 ## Invoke your function
 
-Now you can invoke your functions using either the UI, faas-cli or curl. The faas-cli command is: `echo "hello" | faas-cli invoke hello`{{executable}}. The result should look like this:
+Now you can invoke your functions using either the UI, faas-cli or curl. The faas-cli command to do it is: `echo "hello" | faas-cli invoke hello`{{execute}}. The result should look like this:
 ```
-{"status":"done"}
+{"message":"Hello world!"}
 ```
 Congratulations! You have successfully deployed a serverless function to OpenFaas, in the next step you will learn how OpenFaas handles auto-scaling of your functions. 
-

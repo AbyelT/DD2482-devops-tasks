@@ -5,7 +5,7 @@ This is done with the command:
 Display it in the terminal to see the password: `echo $PASSWORD`{{execute}}. 
 Copy the password before moving on.
 
-To access the UI, open the OpenFaas tab. A pop-up will then appear which requires your credentials. Authorize using the username *admin* and the password as the copied value from the echo. 
+To access the UI, open the OpenFaas tab and refresh it. A pop-up will then appear which requires your credentials. Authorize using the username *admin* and paste the password as the copied value from the echo. 
 
 If correct, The OpenFaas UI should appear similar like this:
 ![openFaasUI](./images/openfaasUI.png)
@@ -15,7 +15,7 @@ Another alternative to work with OpenFaas is the faas-cli.
 Install the Faas-cli: `curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}
 
 The commands we will use at this tutorial are *new*, *build*, *push* and *deploy*.
-To be able to deploy functions using the cli you have to authenticate yourself: `faas-cli login --password $PASSWORD`{{executable}}
+To be able to deploy functions using the cli you have to authenticate yourself: `faas-cli login --password $PASSWORD`{{execute}}
 
 
 You can see more commands through `faas-cli --help`{{execute}}, for more details about each command add the desired command between `faas-cli` and `--help`.
