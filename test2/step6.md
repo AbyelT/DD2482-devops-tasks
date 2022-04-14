@@ -9,7 +9,7 @@ Copy the port.
 5. When the dashboard is visible, authenticate yourself with the credentials admin/admin. Then navigate to the OpenFaas dashboard.
 
 You should be able to see the pre-made OpenFaaS dashboard which looks like this:
-<!-- TODO: add image grafana here -->
+![grafana](../assets/grafana.PNG)
 
 The dashboard displays useful information: the Function rate, the Replica scaling, the Total Requests - 200 and the Execution duration (s).
 
