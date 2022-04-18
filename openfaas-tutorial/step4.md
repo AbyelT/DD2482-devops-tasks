@@ -21,6 +21,6 @@ It is a serverless function which returns a JSON object with the status set to "
 Let's replace the returned object with the following:
 
 ```
-return {message: "Hello world!"}
+return {message: "https://imgflip.com/i/6cxwt9"}
 ```
 You can modify it to do whatever you want. 😊

@@ -41,8 +41,8 @@ You should be able to see it through the OpenFaas UI and faas-cli.
 
 ## Invoke your function
 
-Now you can invoke your functions using either the UI, faas-cli or curl. The faas-cli command to do it is: `echo "hello" | faas-cli invoke hello`{{execute}}. The result should look like this:
+Now you can invoke your functions using either the UI, faas-cli or curl. The faas-cli command to do it is: `echo "hello" | faas-cli invoke hello`{{execute}}. The result should look like this, try opening the payload!:
 ```
-{"message":"Hello world!"}
+{"message":"https://imgflip.com/i/6cxwt9"}
 ```
 Congratulations! You have successfully deployed and invoked a serverless function to OpenFaas. In the next steps you will learn how OpenFaas handles auto-scaling of your functions. 
