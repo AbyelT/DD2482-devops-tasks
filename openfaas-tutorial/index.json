@@ -2,7 +2,7 @@
   "title": "OpenFaas tutorial",
   "description": "Deploying serverless functions on kubernetes with OpenFaas",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {

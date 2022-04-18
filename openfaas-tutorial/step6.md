@@ -9,7 +9,7 @@ Follow these steps to deploy and access Grafana:
 5. When the dashboard is visible, authenticate yourself with the credentials admin/admin. Then navigate to the OpenFaas dashboard by pressing `home` and then selecting `openFaas`.
 
 You should be able to see the pre-made OpenFaaS dashboard which looks like this:
-![grafana](../assets/grafana.PNG)
+![grafana](https://github.com/xrisaD/katacoda-scenarios/blob/main/assets/grafana.PNG?raw=true)
 
 The dashboard displays useful information like the Function rate, the Replica scaling, the Total Requests (with 200 OK) and the Execution duration(s).
 

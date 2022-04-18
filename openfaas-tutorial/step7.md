@@ -8,7 +8,7 @@ The default minimum and maximum number of replicas is *1* and *20*. We can chang
 To see the auto-scaling in action, we use a script which invokes your function 3000 times: `for i in {0..2999}; do echo -n "Post $i" | faas-cli invoke hello && echo; done;`{{execute}}. You should now see an increase in the function rate and eventually the amount replicas increasing as a response to the increased amount of invocations. 
 
 After being invoked a lot of times, the number of replicas should be stabilized to 20 which is the max number of replicas we can have:
-![grafana-autoscaling2](/assets/grafana-autoscaling2.PNG)
+![grafana-autoscaling2](https://github.com/xrisaD/katacoda-scenarios/blob/main/assets/grafana-autoscaling2.PNG?raw=true)
 
 Finally, after 3000 invocations we can see the amount of replicas decreasing back to 1, because the invocations have stopped:
-![grafana-autoscaling3](/assets/grafana-autoscaling3.PNG)
+![grafana-autoscaling3](https://github.com/xrisaD/katacoda-scenarios/blob/main/assets/grafana-autoscaling3.PNG?raw=true)

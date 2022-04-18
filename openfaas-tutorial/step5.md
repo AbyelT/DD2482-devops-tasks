@@ -34,7 +34,7 @@ URL: http://127.0.0.1:8080/function/hello
 You just deployed your first serverless function!
 You should be able to see it through the OpenFaas UI and faas-cli.
 * UI: Open the OpenFaas UI again and press the "hello" function on the sidebar, it should look like this:
-![hellofunction](../assets/hellofunction.png)
+![hellofunction](https://github.com/xrisaD/katacoda-scenarios/blob/main/assets/hellofunction.PNG?raw=true)
 
 * faas-cli: run the following command:
  `faas-cli list`{{execute}}.
