@@ -8,7 +8,7 @@ Copy the password before moving on.
 To access the UI, open the *OpenFaas UI* tab and refresh it. A pop-up will then appear which requires your credentials. Authorize using the username *admin* and paste the password you copied from the echo. 
 
 If correct, the OpenFaas UI should appear similar like this:
-![openfaasui](../assets/openfaasUI.png)
+![openfaasui](https://github.com/xrisaD/katacoda-scenarios/blob/main/assets/openfaasUI.png?raw=true)
 
 ## OpenFaas CLI
 Another alternative to work with OpenFaas is the OpenFaas CLI (faas-cli). Install the Faas-cli: `curl -SLsf https://cli.openfaas.com | sudo sh`{{execute}}.
