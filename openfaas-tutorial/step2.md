@@ -12,7 +12,7 @@ With Arkade, we can install openfaas:
 `arkade install openfaas`{{execute}}. 
 We did not have Helm3 installed so it has been installed automatically.
 
-Installing OpenFaas will print a set of valuable commands to us.  The first two commands will forward the Gateway of OpenFaaS service to your machine: 
+Installing OpenFaas will print a set of valuable commands. The first two commands will forward the Gateway of OpenFaaS service to your machine: 
 - `kubectl rollout status -n openfaas deploy/gateway`{{execute}}
 
 - `kubectl port-forward -n openfaas svc/gateway 8080:8080 &`{{execute}}

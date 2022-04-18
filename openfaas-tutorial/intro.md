@@ -9,7 +9,7 @@ Welcome to this tutorial on how to *deploy serverless functions using OpenFaas*!
 - To create your own Serverless function
 - To inspect functions from the OpenFaas UI and CLI
 - Functions are built, deployed and invoked
-- OpenFaas handles auto-scaling of functions based on the load
+- OpenFaas handles auto-scaling of functions
 
 ## What is OpenFaas?
 OpenFaas is an open-source framework for deploying event-driven functions and microservices to Kubernetes. 
@@ -19,13 +19,13 @@ OpenFaas is an open-source framework for deploying event-driven functions and mi
 The benefits with using this framework include:
 
 * Deploy Serverless functions in containers, on any cloud-service provider without being locked to a single e.g. AWS, Google cloud.
-* Automatic scalability:  handles spikes in traffic and scales down when idle
+* Automatic scalability: handles spikes in traffic and scales down when idle
 * Write code in any language, package them in Docker containers.
 
-With OpenFaas, developers can automate maintenance and scaling. The time saved from this can be put on developing and deploying high-quality code faster, something that DevOps teams can benefit from.
+With OpenFaas, developers can automate maintenance and scaling of their functions & services. This framework would benefit DevOps teams, as the time saved can be put on developing high-quality code faster. 
 
 ## What are Serverless Functions?
-Serverless Functions are server-side functions that is hosted and run by a third-party vendor e.g. Google cloud, AWS. The vendors takes care of infrastructure configuration, maintenance and scaling of the functions. 
+Serverless Functions are server-side functions that are hosted and run by a third-party vendor e.g. Google cloud, AWS. The vendors take care of infrastructure configuration, maintenance and scaling of the functions. Developers are only concerned with developing and deploying the latest functions.
 
 ## What prior experience & tools is required?
 This tutorial is intended for beginners new to serverless functions. Experience with docker and Kubernetes are not required but is a bonus. The steps used are based on the [OpenFaas documentation](https://docs.openfaas.com/).
