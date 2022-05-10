@@ -1,10 +1,6 @@
-# Interactive Katacoda Scenarios
+# OpenFaas Katacoda Scenario
 
-[![](http://shields.katacoda.com/katacoda/chrysa/count.svg)](https://www.katacoda.com/chrysa "Get your profile on Katacoda.com")
+This katacoda scenario was created as part of a task in the [DD2482 Automated Software Testing and DevOps](https://github.com/KTH/devops-course/) course. The scenario describes OpenFaas, an open-source framework for deploying event-driven functions and microservices to Kubernetes. With OpenFaas, developers can automate maintenance and scaling of their functions & services. 
 
-Visit https://www.katacoda.com/chrysa to view the profile and interactive scenarios
+The tutorial is avaiable as a [katacoda scenario](https://www.katacoda.com/chrysa/scenarios/openfaas-tutorial)
 
-### Writing Scenarios
-Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
-
-For examples, visit https://github.com/katacoda/scenario-example
