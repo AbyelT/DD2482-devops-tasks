@@ -1,0 +1,36 @@
+pull_request_rules:
+  - name: Automatic merge for main when CI passes and 2 review
+    conditions:
+      - "#approved-reviews-by>=2"      
+      - check-success=build 
+      - base=main
+    actions:
+      merge:
+        method: merge
+  - name: Label default
+    conditions:
+      - title~=default    
+    actions:
+      label:
+        add:
+          - default
+  - name: Label important
+    conditions:
+      - title~=important    
+    actions:
+      label:
+        add:
+          - important
+      comment:
+        message: important!
+  - name: Label urgent
+    conditions:
+      - title~=urgent    
+    actions:
+      label:
+        add:
+          - urgent
+      comment:
+        message: urgent!
+
+
